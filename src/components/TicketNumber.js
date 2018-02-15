@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class TicketNumber extends React.Component {
   render() {
@@ -7,5 +8,9 @@ class TicketNumber extends React.Component {
     )
   }
 }
+
+TicketNumber.propTypes = {
+  number: PropTypes.string,
+};
 
 export default TicketNumber;
