@@ -30,6 +30,7 @@ class App extends Component {
 
 
   render() {
+    console.log(this.state);
     return (
       <div className="App">
         <header className="App-header">
@@ -38,15 +39,19 @@ class App extends Component {
         </header>
         {this.state.cards.map(function(card, index){
           return (
-            <table>
+            <div key={index}>
                 {card.map(function(row, index){
                   return (
-                    <tr>
-                      <td>{row}</td>
-                    </tr>
+                    <div key={index}>
+                      {row.map(function(cell, index){
+                        return (
+                          <div key={index}>{cell}</div>
+                        );
+                      })}
+                    </div>
                   );
                 })}
-            </table>
+            </div>
           );
         })}
       </div>
