@@ -7,8 +7,10 @@ import TicketRow from './components/TicketRow';
 class App extends Component {
   constructor() {
     super();
-    let numberPairs = constants.INPUT_STRING.match(/(..?)/g, function(pair) {
-      return parseInt(pair, 10);
+    let numberPairs = constants.INPUT_STRING.match(/(..?)/g).map(function (number) {
+      // Parsing as base 10 then casting back to string removes leading 0s the
+      // ticket numbers but keeps the type right for the JSX template. 
+      return parseInt(number, 10).toString();
     });
 
     let fullCards = [];
