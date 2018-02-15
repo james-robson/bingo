@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import constants from './constants';
-import TicketNumber from './components/TicketNumber';
+import TicketRow from './components/TicketRow';
 
 class App extends Component {
   constructor() {
@@ -43,13 +43,7 @@ class App extends Component {
             <div key={index}>
                 {card.map(function(row, index){
                   return (
-                    <div key={index}>
-                      {row.map(function(number, index){
-                        return (
-                          <TicketNumber key={index} number={number} />
-                        );
-                      })}
-                    </div>
+                    <TicketRow key={index} row={row} style={{flexDirection: 'row'}} />
                   );
                 })}
             </div>
