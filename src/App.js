@@ -9,25 +9,25 @@ class App extends Component {
     super();
     let numberPairs = constants.INPUT_STRING.match(/(..?)/g).map(function (number) {
       // Parsing as base 10 then casting back to string removes leading 0s the
-      // ticket numbers but keeps the type right for the JSX template. 
+      // ticket numbers but keeps the type right for the JSX template.
       return parseInt(number, 10).toString();
     });
 
-    let fullCards = [];
+    let fullTickets = [];
     while (numberPairs.length) {
-      fullCards.push(numberPairs.splice(0, constants.CARD_SIZE));
+      fullTickets.push(numberPairs.splice(0, constants.TICKET_SIZE));
     }
 
-    let cardsWithRows = [];
-    for (let cardCount = 0; cardCount < fullCards.length; cardCount++) {
-      let cardRowData = [];
-      while (fullCards[cardCount].length) {
-        cardRowData.push(fullCards[cardCount].splice(0, constants.ROW_SIZE));
+    let ticketsWithRows = [];
+    for (let ticketCount = 0; ticketCount < fullTickets.length; ticketCount++) {
+      let ticketRowData = [];
+      while (fullTickets[ticketCount].length) {
+        ticketRowData.push(fullTickets[ticketCount].splice(0, constants.ROW_SIZE));
       }
-      cardsWithRows.push(cardRowData);
+      ticketsWithRows.push(ticketRowData);
     }
 
-    this.state = {cards: cardsWithRows};
+    this.state = {tickets: ticketsWithRows};
 
   }
 
@@ -40,10 +40,10 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        {this.state.cards.map(function(card, index){
+        {this.state.tickets.map(function(ticket, index){
           return (
             <div key={index}>
-                {card.map(function(row, index){
+                {ticket.map(function(row, index){
                   return (
                     <TicketRow key={index} row={row} style={{flexDirection: 'row'}} />
                   );
