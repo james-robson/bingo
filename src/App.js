@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import constants from './constants';
+import TicketNumber from './components/TicketNumber';
 
 class App extends Component {
   constructor() {
@@ -43,9 +44,9 @@ class App extends Component {
                 {card.map(function(row, index){
                   return (
                     <div key={index}>
-                      {row.map(function(cell, index){
+                      {row.map(function(number, index){
                         return (
-                          <div key={index}>{cell}</div>
+                          <TicketNumber key={index} number={number} />
                         );
                       })}
                     </div>
