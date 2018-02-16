@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import constants from './constants';
-import TicketRow from './components/TicketRow';
+import TicketContainer from './components/TicketContainer';
+import { Flex } from 'reflexbox';
 
 class App extends Component {
   constructor() {
@@ -40,17 +41,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        {this.state.tickets.map(function(ticket, index){
-          return (
-            <div key={index}>
-                {ticket.map(function(row, index){
-                  return (
-                    <TicketRow key={index} row={row} style={{flexDirection: 'row'}} />
-                  );
-                })}
-            </div>
-          );
-        })}
+        <Flex>
+          <TicketContainer tickets={this.state.tickets} />
+        </Flex>
       </div>
     );
   }

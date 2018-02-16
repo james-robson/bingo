@@ -1,0 +1,3 @@
+.ticket-container > div:not(:last-child) {
+   border-bottom: 1px dashed black;
+}
