@@ -1,7 +1,18 @@
-.ticket-container > div:not(:last-child) {
+.ticket-container > div.ticket-wrapper:not(:last-child) {
    border-bottom: 1px dashed black;
 }
 
-.ticket-container > div {
-  box-shadow: -12px 0 6px -8px #808080;
+.ticket-container > div.ticket-wrapper {
+  box-shadow: -12px 0 6px -6px #375b60;
+  margin-right: 10px;
+}
+
+.ticket-container > div:first-child {
+  padding: 10px 0;
+}
+
+span {
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
 }

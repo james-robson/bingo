@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
 import constants from './constants';
 import TicketContainer from './components/TicketContainer';
-import { Flex } from 'reflexbox';
+import { Flex, Box } from 'reflexbox';
 
 class App extends Component {
   constructor() {
@@ -37,10 +37,11 @@ class App extends Component {
     console.log(this.state); //eslint-disable-line
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
+        <Flex justify='center' align='middle' className="App-header">
+          <Box p={1}>
+            <img src={logo} className="App-logo" alt="logo" />
+          </Box>
+        </Flex>
         <Flex justify='flex-end'>
           <TicketContainer tickets={this.state.tickets} />
         </Flex>

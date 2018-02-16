@@ -9,6 +9,9 @@ class TicketContainer extends React.Component {
   render() {
     return (
       <div className="ticket-container">
+        <div>
+          <span>Tickets</span>
+        </div>
         {this.props.tickets.map(function(ticket, index){
           return (
               <Ticket key={index} ticket={ticket} />
