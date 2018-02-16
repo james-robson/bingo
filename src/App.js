@@ -37,13 +37,20 @@ class App extends Component {
     console.log(this.state); //eslint-disable-line
     return (
       <div className="App">
-        <Flex justify='center' align='middle' className="App-header">
+        <Flex justify='center' align='center' className="App-header">
           <Box p={1}>
             <img src={logo} className="App-logo" alt="logo" />
           </Box>
         </Flex>
-        <Flex justify='flex-end'>
-          <TicketContainer tickets={this.state.tickets} />
+        <Flex w={1}>
+          <Flex justify='center' align='center' direction='row' w={1}>
+            <button className="play-button">
+              <span>PLAY</span>
+            </button>
+          </Flex>
+          <Box>
+            <TicketContainer tickets={this.state.tickets} />
+          </Box>
         </Flex>
       </div>
     );

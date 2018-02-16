@@ -2,7 +2,7 @@
   text-align: center;
   background: linear-gradient(#00646f, #39a3ae);
   height: 100%;
-  min-height: 800px;
+  min-height: 900px;
 }
 
 .App-header {
@@ -20,7 +20,18 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.play-button {
+  background-color: #007d00;
+  color: #fff;
+  background: linear-gradient(to bottom, #6bb56f 0%, #1b8e44 50%, #007d3f 51%, #186331 100%);
+  border: 1px black solid;
+  Outline: none; /* Fix issue with border radius on click */
+  border-radius: 10px;
+  padding: 8px 16px;
+}
+
+.play-button:hover {
+    background-color: #000;
+    opacity:0.8;
+    cursor: pointer;
 }

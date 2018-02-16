@@ -4,7 +4,7 @@
 
 .ticket-container > div.ticket-wrapper {
   box-shadow: -12px 0 6px -6px #375b60;
-  margin-right: 10px;
+  margin: 0 20px;
 }
 
 .ticket-container > div:first-child {
