@@ -1,15 +1,29 @@
 import React, { Component } from 'react';
+import { Flex, Box } from 'reflexbox';
+import ReactInterval from 'react-interval';
+
+import TicketContainer from './components/TicketContainer';
+
 import logo from './logo.png';
 import './App.css';
 import constants from './constants';
-import TicketContainer from './components/TicketContainer';
-import { Flex, Box } from 'reflexbox';
 
 class App extends Component {
   constructor() {
     super();
-    this.state = {tickets: [], calledNumbers: [], playing: false};
-    this.handleClick = this.handleClick.bind(this);
+    const ballsRemaining = Array.apply(null, {length: 90}).map(function(value, index){
+      return index + 1;
+    });
+    this.state = {
+      tickets: [],
+      calledNumbers: [],
+      playing: false,
+      ballsRemaining: ballsRemaining,
+      timerEnabled: false,
+      timeout: 1000
+    };
+    this.handleClick  = this.handleClick.bind(this);
+    this.startDrawing = this.startDrawing.bind(this);
   }
 
   componentWillMount() {
@@ -57,11 +71,18 @@ class App extends Component {
   }
 
   handleClick() {
-    this.setState({
-      tickets: this.state.tickets,
-      calledNumbers: [1, 77],
-      playing: true
-    });
+    let state = Object.assign({}, this.state);
+    state.playing      = true;
+    state.timerEnabled = true;
+    this.setState(state);
+  }
+
+  startDrawing() {
+
+    const ball = this.state.ballsRemaining.splice(this.state.ballsRemaining.length * Math.random() | 0, 1)[0]
+    const state = this.state;
+    state.calledNumbers.unshift(ball);
+    this.setState(state);
   }
 
   render() {
@@ -96,6 +117,10 @@ class App extends Component {
 
     return (
       <div className="App">
+        <ReactInterval
+          timeout={this.state.timeout}
+          enabled={this.state.timerEnabled}
+          callback={this.startDrawing} />
         <Flex justify='center' align='center' className="App-header">
           <Box p={1}>
             <img src={logo} className="App-logo" alt="logo" />

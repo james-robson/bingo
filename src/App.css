@@ -48,7 +48,7 @@ div.number {
 }
 
 div.called-number {
-  transition: all 2s;
+  transition: all .5s;
   color: #fff;
 }
 
