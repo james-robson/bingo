@@ -8,7 +8,7 @@ import { Flex, Box } from 'reflexbox';
 class App extends Component {
   constructor() {
     super();
-    this.state = {tickets: [], calledNumbers: []};
+    this.state = {tickets: [], calledNumbers: [], playing: false};
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -59,12 +59,24 @@ class App extends Component {
   handleClick() {
     this.setState({
       tickets: this.state.tickets,
-      calledNumbers: ["1"]
+      calledNumbers: ["1"],
+      playing: true
     });
   }
 
   render() {
-    console.log(this.state); //eslint-disable-line
+    let playArea = this.state.playing ?
+      <Flex justify='center' align='center' direction='row' w={1}>
+        <button onClick={this.handleClick} className="play-button">
+          <span>PLAYING</span>
+        </button>
+      </Flex> :
+      <Flex justify='center' align='center' direction='row' w={1}>
+        <button onClick={this.handleClick} className="play-button">
+          <span>PLAY</span>
+        </button>
+      </Flex>;
+
     return (
       <div className="App">
         <Flex justify='center' align='center' className="App-header">
@@ -73,11 +85,9 @@ class App extends Component {
           </Box>
         </Flex>
         <Flex w={1}>
-          <Flex justify='center' align='center' direction='row' w={1}>
-            <button onClick={this.handleClick} className="play-button">
-              <span>PLAY</span>
-            </button>
-          </Flex>
+
+          {playArea}
+
           <Box>
             <TicketContainer tickets={this.state.tickets} calledNumbers={this.state.calledNumbers} />
           </Box>
