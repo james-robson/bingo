@@ -59,20 +59,37 @@ class App extends Component {
   handleClick() {
     this.setState({
       tickets: this.state.tickets,
-      calledNumbers: ["1"],
+      calledNumbers: [1, 77],
       playing: true
     });
   }
 
   render() {
+    const that = this;
+
+    let ballsToCall = Array.apply(null, {length: 90}).map(function(value, index){
+      return index + 1;
+    });
+
     let playArea = this.state.playing ?
-      <Flex justify='center' align='center' direction='row' w={1}>
-        <button onClick={this.handleClick} className="play-button">
-          <span>PLAYING</span>
-        </button>
+      <Flex justify='center' p={1/4} w={1} column>
+        <Box p={1}>
+          <div><span>Call:</span></div>
+          <div className='called-number-lg'><span>{this.state.calledNumbers[0]}</span></div>
+        </Box>
+        <Box className='called-number-list' p={3/4}>
+          <Flex wrap>
+            {ballsToCall.map(function(number, index){
+              return (
+                <Box className={'number ' + (that.state.calledNumbers.includes(number) ? 'called-number' : '')}
+                  key={index} p={1}>{number}</Box>
+              );
+            })}
+          </Flex>
+        </Box>
       </Flex> :
-      <Flex justify='center' align='center' direction='row' w={1}>
-        <button onClick={this.handleClick} className="play-button">
+      <Flex justify='center' align='center' w={1}>
+        <button onClick={this.handleClick} className='play-button'>
           <span>PLAY</span>
         </button>
       </Flex>;

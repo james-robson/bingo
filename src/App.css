@@ -2,7 +2,7 @@
   text-align: center;
   background: linear-gradient(#00646f, #39a3ae);
   height: 100%;
-  min-height: 900px;
+  overflow:auto;
 }
 
 .App-header {
@@ -31,7 +31,27 @@
 }
 
 .play-button:hover {
-    background-color: #000;
-    opacity:0.8;
-    cursor: pointer;
+  background-color: #000;
+  opacity:0.8;
+  cursor: pointer;
+}
+
+div.called-number-list {
+  height: 100%;
+}
+
+div.number {
+  min-width: 46px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #303030;
+}
+
+div.called-number {
+  transition: all 2s;
+  color: #fff;
+}
+
+div.called-number-lg {
+  margin: 40px 0;
 }
