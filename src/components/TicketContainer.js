@@ -7,6 +7,7 @@ import './styles/TicketContainer.css';
 
 class TicketContainer extends React.Component {
   render() {
+    let that = this;
     return (
       <div className="ticket-container">
         <div>
@@ -14,7 +15,7 @@ class TicketContainer extends React.Component {
         </div>
         {this.props.tickets.map(function(ticket, index){
           return (
-              <Ticket key={index} ticket={ticket} />
+              <Ticket key={index} ticket={ticket} calledNumbers={that.props.calledNumbers}/>
           );
         })}
       </div>
@@ -24,6 +25,7 @@ class TicketContainer extends React.Component {
 
 TicketContainer.propTypes = {
   tickets: PropTypes.array,
+  calledNumbers: PropTypes.array,
 };
 
 export default TicketContainer;

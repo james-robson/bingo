@@ -21,6 +21,7 @@ class Ticket extends React.Component {
 
 Ticket.propTypes = {
   ticket: PropTypes.array,
+  calledNumbers: PropTypes.array,
 };
 
 export default Ticket;
