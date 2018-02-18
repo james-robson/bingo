@@ -41,15 +41,19 @@ div.called-number-list {
 }
 
 div.number {
+  padding: 2px 2px;
+  margin: 4px 12px;
   min-width: 46px;
   font-size: 22px;
   font-weight: bold;
   color: #303030;
+  border-bottom: 2px #303030 solid;
 }
 
 div.called-number {
   transition: all .5s;
   color: #fff;
+  border-bottom: 2px #fff solid;
 }
 
 .called-number-lg {
