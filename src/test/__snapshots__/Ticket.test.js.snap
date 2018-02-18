@@ -1,0 +1,407 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the expected element when calledNumers has values 1`] = `
+<div
+  className="ticket-wrapper _Rfx0_"
+>
+  <div
+    className="number-wrapper"
+  >
+    <div
+      className="_Rfx0_"
+    >
+      <div
+        className="ticket-number called _Rfx1_"
+      >
+        <span>
+          1
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          
+        </span>
+      </div>
+      <div
+        className="ticket-number called _Rfx1_"
+      >
+        <span>
+          2
+        </span>
+      </div>
+      <div
+        className="ticket-number called _Rfx1_"
+      >
+        <span>
+          3
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          4
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          5
+        </span>
+      </div>
+    </div>
+    <div
+      className="_Rfx0_"
+    >
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          6
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          7
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          8
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          9
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          10
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          
+        </span>
+      </div>
+    </div>
+    <div
+      className="_Rfx0_"
+    >
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          11
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          12
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          13
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          14
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          15
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="prize-indicator"
+  >
+    <span>
+      <span
+        className="number"
+      >
+        5
+      </span>
+       TO GO 
+    </span>
+  </div>
+</div>
+`;
+
+exports[`renders the expected element when calledNumers is empty 1`] = `
+<div
+  className="ticket-wrapper _Rfx0_"
+>
+  <div
+    className="number-wrapper"
+  >
+    <div
+      className="_Rfx0_"
+    >
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          1
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          2
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          3
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          4
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          5
+        </span>
+      </div>
+    </div>
+    <div
+      className="_Rfx0_"
+    >
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          6
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          7
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          8
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          9
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          10
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          
+        </span>
+      </div>
+    </div>
+    <div
+      className="_Rfx0_"
+    >
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          11
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          12
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          13
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          14
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          15
+        </span>
+      </div>
+      <div
+        className="ticket-number  _Rfx1_"
+      >
+        <span>
+          
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="prize-indicator"
+  >
+    <span>
+      <span
+        className="number"
+      >
+        5
+      </span>
+       TO GO 
+    </span>
+  </div>
+</div>
+`;

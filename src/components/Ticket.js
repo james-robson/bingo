@@ -19,6 +19,9 @@ class Ticket extends React.Component {
       line: false,
       bingo: false
     }
+
+    // Bind method to allow testing
+    this._updateNumbersToGo = this._updateNumbersToGo.bind(this);
   }
 
   componentWillReceiveProps(){

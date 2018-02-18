@@ -1,0 +1,1380 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the expected element 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="App-header _Rfx0_ _Rfx1_ _Rfx2_"
+  >
+    <div
+      className="_Rfx3_"
+    >
+      <img
+        alt="logo"
+        className="App-logo"
+        src="logo.png"
+      />
+    </div>
+  </div>
+  <div
+    className="_Rfx4_ _Rfx2_"
+  >
+    <div
+      className="_Rfx0_ _Rfx1_ _Rfx4_ _Rfx2_"
+    >
+      <button
+        className="play-button"
+        onClick={[Function]}
+      >
+        <span
+          className="text-lg"
+        >
+          PLAY
+        </span>
+      </button>
+    </div>
+    <div
+      className=""
+    >
+      <div
+        className="ticket-container"
+      >
+        <div>
+          <span
+            className="text-lg"
+          >
+            Tickets
+          </span>
+        </div>
+        <div
+          className="ticket-wrapper _Rfx2_"
+        >
+          <div
+            className="number-wrapper"
+          >
+            <div
+              className="_Rfx2_"
+            >
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  1
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  17
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  22
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  47
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  52
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+            </div>
+            <div
+              className="_Rfx2_"
+            >
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  4
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  36
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  53
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  60
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  70
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+            </div>
+            <div
+              className="_Rfx2_"
+            >
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  26
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  37
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  49
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  74
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  81
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            className="prize-indicator"
+          >
+            <span>
+              <span
+                className="number"
+              >
+                5
+              </span>
+               TO GO 
+            </span>
+          </div>
+        </div>
+        <div
+          className="ticket-wrapper _Rfx2_"
+        >
+          <div
+            className="number-wrapper"
+          >
+            <div
+              className="_Rfx2_"
+            >
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  23
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  34
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  55
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  75
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  83
+                </span>
+              </div>
+            </div>
+            <div
+              className="_Rfx2_"
+            >
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  2
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  15
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  40
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  58
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  88
+                </span>
+              </div>
+            </div>
+            <div
+              className="_Rfx2_"
+            >
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  19
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  28
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  44
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  67
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  89
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            className="prize-indicator"
+          >
+            <span>
+              <span
+                className="number"
+              >
+                5
+              </span>
+               TO GO 
+            </span>
+          </div>
+        </div>
+        <div
+          className="ticket-wrapper _Rfx2_"
+        >
+          <div
+            className="number-wrapper"
+          >
+            <div
+              className="_Rfx2_"
+            >
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  6
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  12
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  41
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  50
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  73
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+            </div>
+            <div
+              className="_Rfx2_"
+            >
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  24
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  33
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  48
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  76
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  84
+                </span>
+              </div>
+            </div>
+            <div
+              className="_Rfx2_"
+            >
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  7
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  38
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  57
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  61
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  86
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            className="prize-indicator"
+          >
+            <span>
+              <span
+                className="number"
+              >
+                5
+              </span>
+               TO GO 
+            </span>
+          </div>
+        </div>
+        <div
+          className="ticket-wrapper _Rfx2_"
+        >
+          <div
+            className="number-wrapper"
+          >
+            <div
+              className="_Rfx2_"
+            >
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  5
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  11
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  32
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  43
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  78
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+            </div>
+            <div
+              className="_Rfx2_"
+            >
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  16
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  39
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  56
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  63
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  80
+                </span>
+              </div>
+            </div>
+            <div
+              className="_Rfx2_"
+            >
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  8
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  18
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  20
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  65
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  90
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            className="prize-indicator"
+          >
+            <span>
+              <span
+                className="number"
+              >
+                5
+              </span>
+               TO GO 
+            </span>
+          </div>
+        </div>
+        <div
+          className="ticket-wrapper _Rfx2_"
+        >
+          <div
+            className="number-wrapper"
+          >
+            <div
+              className="_Rfx2_"
+            >
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  10
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  45
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  59
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  62
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  82
+                </span>
+              </div>
+            </div>
+            <div
+              className="_Rfx2_"
+            >
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  14
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  29
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  46
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  64
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  71
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+            </div>
+            <div
+              className="_Rfx2_"
+            >
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  9
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  35
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  66
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  72
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  87
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            className="prize-indicator"
+          >
+            <span>
+              <span
+                className="number"
+              >
+                5
+              </span>
+               TO GO 
+            </span>
+          </div>
+        </div>
+        <div
+          className="ticket-wrapper _Rfx2_"
+        >
+          <div
+            className="number-wrapper"
+          >
+            <div
+              className="_Rfx2_"
+            >
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  13
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  21
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  30
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  68
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  77
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+            </div>
+            <div
+              className="_Rfx2_"
+            >
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  3
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  25
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  31
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  51
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  69
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+            </div>
+            <div
+              className="_Rfx2_"
+            >
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  27
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  42
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  54
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  79
+                </span>
+              </div>
+              <div
+                className="ticket-number  _Rfx3_"
+              >
+                <span>
+                  85
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            className="prize-indicator"
+          >
+            <span>
+              <span
+                className="number"
+              >
+                5
+              </span>
+               TO GO 
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
