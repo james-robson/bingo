@@ -2,6 +2,8 @@
 
 A small bingo game created using React. Click "PLAY" to release the balls!
 
+![Screenshot of the app](./screenshot.png)
+
 ## Development
 
 Getting started with development is fairly straight forward:
@@ -11,7 +13,7 @@ Getting started with development is fairly straight forward:
 You will need `git` installed locally to clone this repository.
 
 You will need `Node >= 6` installed on your machine. If you don't have Node
-installed (nvm)[https://github.com/creationix/nvm] is an excellent version
+installed [nvm](https://github.com/creationix/nvm) is an excellent version
 manager for node.
 
 ### Running the app
@@ -27,11 +29,11 @@ Once the above is finished, start the app with:
 npm start
 ```
 
-You should now be able to access the app on (http://localhost:3000)[http://localhost:3000]
+You should now be able to access the app on [http://localhost:3000](http://localhost:3000)
 
 ### Running the tests
 
-Run the tests with the following command (note: make sure you've run `npm install first`):
+Run the tests with the following command (note: make sure you've run `npm install` first):
 
 ```
 npm test
@@ -42,19 +44,19 @@ more details on the test framework used.
 
 ## Details about the libraries used
 
-This app is build with (React)[https://reactjs.org/] - a Javascript library
+This app is build with [React](https://reactjs.org/) - a Javascript library
 focused on creating reusable components.
 
-The (Create React App)[https://reactjs.org/docs/add-react-to-a-new-app.html]
+The [Create React App](https://reactjs.org/docs/add-react-to-a-new-app.html)
 module was used to create the initial project structure. This allows for quick
 setup with minimal configuration. *Note:* If you need to configure advanced
 features such as SASS or change the Webpack configuration you may need to follow
 the CRA *eject* procedure.
 
 The original Create React App README that was generated with the project is
-available (here)[./CRA_README.md].
+available [here](./CRA_README.md).
 
-The testing framework used by React is (Jest)[https://facebook.github.io/jest/docs/en/tutorial-react.html].
+The testing framework used by React is [Jest](https://facebook.github.io/jest/docs/en/tutorial-react.html).
 
 ## Code structure
 
@@ -113,7 +115,7 @@ Run the server by `cd`ing to the root directory and running the following:
 serve -s build
 ```
 
-The production build should now be running on (http://localhost:5000)[http://localhost:5000]
+The production build should now be running on [http://localhost:5000](http://localhost:5000)
 
 ### Troubleshooting the yarn server
 
@@ -123,4 +125,17 @@ binary:
 ```
 yarn global bin
 ```
-Copy the directory this outputs and (add it to your $PATH)[https://unix.stackexchange.com/a/26059/251285].
+Copy the directory this outputs and [add it to your $PATH](https://unix.stackexchange.com/a/26059/251285).
+
+## Future plans
+
+The following are some future plans:
+
+* Use SASS (or similar) to make the CSS prettier and more extensible.
+* User [React Styleguidist](https://github.com/styleguidist/react-styleguidist)
+  to build a style guide of the pre built components which may eb re-used in
+  other games.
+* Increase test coverage over all components (test coverage should be a metric
+  which is checked in our build pipeline).
+* Tighten the linter rules to a standard that the team agrees on (or as close as
+  you can get to agreement)
