@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import { Flex } from 'reflexbox';
 import TicketRow from './TicketRow';
 
 import './styles/Ticket.css';
@@ -14,17 +14,22 @@ import './styles/Ticket.css';
 class Ticket extends React.Component {
   render() {
     return (
-      <div className="ticket-wrapper">
-          {this.props.ticket.map(function(row, index){
-            return (
-              <TicketRow
-                key={index}
-                row={row}
-                calledNumbers={this.props.calledNumbers}
-                />
-            );
-          }, this)}
-      </div>
+      <Flex className="ticket-wrapper">
+        <div className="number-wrapper">
+            {this.props.ticket.map(function(row, index){
+              return (
+                <TicketRow
+                  key={index}
+                  row={row}
+                  calledNumbers={this.props.calledNumbers}
+                  />
+              );
+            }, this)}
+        </div>
+        <div>
+          TEST
+        </div>
+      </Flex>
     );
   }
 }

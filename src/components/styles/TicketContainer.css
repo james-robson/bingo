@@ -1,10 +1,14 @@
-.ticket-container > div.ticket-wrapper:not(:last-child) {
+.ticket-wrapper {
+  background-color: #ffdce5;
+  margin-right: 20px;
+}
+
+.ticket-wrapper:not(:last-child) {
    border-bottom: 1px dashed black;
 }
 
-.ticket-container > div.ticket-wrapper {
+div.number-wrapper {
   box-shadow: -12px 0 6px -6px #375b60;
-  margin: 0 20px;
 }
 
 .ticket-container > div:first-child {
