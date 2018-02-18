@@ -26,8 +26,8 @@ class Ticket extends React.Component {
               );
             }, this)}
         </div>
-        <div>
-          TEST
+        <div className='prize-indicator'>
+          <span><span className='number'>5</span> TO GO </span>
         </div>
       </Flex>
     );

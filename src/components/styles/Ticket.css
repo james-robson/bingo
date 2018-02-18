@@ -3,3 +3,26 @@
   padding: 10px;
   margin: 0;
 }
+
+div.prize-indicator {
+  width: 40px;
+  border: 2px black solid;
+  margin: 10px 10px 8px 0;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #6bb56f 0%, #1b8e44 50%, #007d3f 51%, #186331 100%);
+}
+
+div.prize-indicator > span {
+  color: #fff;
+  display: table-cell;
+  word-wrap: break-word;
+  vertical-align: middle;
+  word-spacing: 40px;
+  line-height: 24px;
+  padding-top: 6px;
+}
+
+div.prize-indicator > span > span.number {
+  font-size: 30px;
+  font-weight: bold;
+}
