@@ -11,7 +11,7 @@ import TicketNumber from './TicketNumber';
  * @class
  */
 class TicketRow extends React.Component {
-render() {
+  render() {
     return (
       <Flex>
         {this.props.row.map(function(ticketNumber, index){

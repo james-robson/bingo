@@ -12,6 +12,34 @@ import './styles/Ticket.css';
  * @class
  */
 class Ticket extends React.Component {
+  constructor(){
+    super();
+    this.state = {
+      numbersToGo: 5
+    }
+  }
+
+  _updateNumbersToGo(newVal){
+    if (newVal < this.state.numbersToGo){
+      this.setState({
+        numbersToGo: newVal
+      });
+    }
+  }
+
+  componentWillReceiveProps(){
+    for (let row = 0; row < this.props.ticket.length; row++) {
+      let numbersToGo = 5;
+      for (let num = 0; num < this.props.ticket[row].length; num++) {
+        let checkNumber = this.props.ticket[row][num];
+        if (this.props.calledNumbers.includes(parseInt(checkNumber, 10))) {
+          numbersToGo -= 1;
+        }
+      }
+      this._updateNumbersToGo(numbersToGo);
+    }
+  }
+
   render() {
     return (
       <Flex className="ticket-wrapper">
@@ -27,7 +55,7 @@ class Ticket extends React.Component {
             }, this)}
         </div>
         <div className='prize-indicator'>
-          <span><span className='number'>5</span> TO GO </span>
+          <span><span className='number'>{this.state.numbersToGo}</span> TO GO </span>
         </div>
       </Flex>
     );
