@@ -17,9 +17,13 @@ class Ticket extends React.Component {
       <div className="ticket-wrapper">
           {this.props.ticket.map(function(row, index){
             return (
-              <TicketRow key={index} row={row} style={{flexDirection: 'row'}} />
+              <TicketRow
+                key={index}
+                row={row}
+                calledNumbers={this.props.calledNumbers}
+                />
             );
-          })}
+          }, this)}
       </div>
     );
   }

@@ -13,13 +13,16 @@ import './styles/TicketNumber.css';
 class TicketNumber extends React.Component {
   render() {
     return(
-      <Box p={1} className="ticket-number">{this.props.ticketNumber}</Box>
+      <Box p={1} className={'ticket-number ' + (this.props.called ? 'called' : '')}>
+          <span>{this.props.ticketNumber}</span>
+      </Box>
     )
   }
 }
 
 TicketNumber.propTypes = {
   ticketNumber: PropTypes.string,
+  called: PropTypes.bool,
 };
 
 export default TicketNumber;

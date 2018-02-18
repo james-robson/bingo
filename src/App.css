@@ -52,7 +52,13 @@ div.called-number {
   color: #fff;
 }
 
-div.called-number-lg {
+.called-number-lg {
   margin: 40px 0;
   min-height: 45px;
+}
+
+span.text-lg {
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
 }

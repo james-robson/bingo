@@ -66,30 +66,29 @@ class App extends Component {
   }
 
   render() {
-    const that = this;
     let ballsToCall = constants.ALL_BALLS.slice();
 
     /* The play area is displayed conditionally based on current state */
     let playArea = this.state.playing ?
       <Flex justify='center' p={1/4} w={1} column>
         <Box p={1}>
-          <div><span>Call:</span></div>
-          <div className='called-number-lg'><span>{this.state.calledNumbers[0]}</span></div>
+          <div><span className='text-lg'>Call:</span></div>
+          <div className='called-number-lg'><span className='text-lg'>{this.state.calledNumbers[0]}</span></div>
         </Box>
         <Box className='called-number-list' p={3/4}>
           <Flex wrap>
             {ballsToCall.map(function(number, index){
               return (
-                <Box className={'number ' + (that.state.calledNumbers.includes(number) ? 'called-number' : '')}
+                <Box className={'number ' + (this.state.calledNumbers.includes(number) ? 'called-number' : '')}
                   key={index} p={1}>{number}</Box>
               );
-            })}
+            }, this)}
           </Flex>
         </Box>
       </Flex> :
       <Flex justify='center' align='center' w={1}>
         <button onClick={this._handlePlayClick} className='play-button'>
-          <span>PLAY</span>
+          <span className='text-lg'>PLAY</span>
         </button>
       </Flex>;
 

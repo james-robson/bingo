@@ -16,11 +16,14 @@ class TicketContainer extends React.Component {
     return (
       <div className="ticket-container">
         <div>
-          <span>Tickets</span>
+          <span className='text-lg'>Tickets</span>
         </div>
         {this.props.tickets.map(function(ticket, index){
           return (
-              <Ticket key={index} ticket={ticket} calledNumbers={that.props.calledNumbers}/>
+              <Ticket
+                key={index}
+                ticket={ticket}
+                calledNumbers={that.props.calledNumbers}/>
           );
         })}
       </div>

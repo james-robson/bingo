@@ -10,9 +10,3 @@
 .ticket-container > div:first-child {
   padding: 10px 0;
 }
-
-span {
-  color: #fff;
-  font-weight: bold;
-  font-size: 40px;
-}
