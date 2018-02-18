@@ -5,6 +5,11 @@ import Ticket from './Ticket';
 
 import './styles/TicketContainer.css';
 
+/**
+ * Component which renders a header for the tickets area and Ticket component
+ * for each of the player's tickets.
+ * @class
+ */
 class TicketContainer extends React.Component {
   render() {
     let that = this;

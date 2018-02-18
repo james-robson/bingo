@@ -5,6 +5,12 @@ import TicketRow from './TicketRow';
 
 import './styles/Ticket.css';
 
+/**
+ * Main ticket component - renders the number rows on each ticket (TicketRow
+ * component) as well as the prize indicator.
+ * prize indicator beside
+ * @class
+ */
 class Ticket extends React.Component {
   render() {
     return (

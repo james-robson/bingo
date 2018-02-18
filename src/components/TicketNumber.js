@@ -4,6 +4,12 @@ import { Box } from 'reflexbox';
 
 import './styles/TicketNumber.css';
 
+/**
+ * This component is a small number square which makes up a row on a player
+ * ticket. The component manages style based on whether or not the 'called' prop
+ * is passed down to it.
+ * @class
+ */
 class TicketNumber extends React.Component {
   render() {
     return(

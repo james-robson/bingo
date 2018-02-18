@@ -3,6 +3,7 @@ const constants = {
   COLUMN_RANGES: [9, 19, 29, 39, 49, 59, 69, 79, 90 ],
   TICKET_SIZE: 15,
   ROW_SIZE: 5,
+  CALLER_TIMEOUT: 1000,
   ALL_BALLS: Array.apply(null, {length: 90}).map(function(value, index){
         return index + 1;
   })

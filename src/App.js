@@ -23,7 +23,7 @@ class App extends Component {
       playing: false,
       ballsRemaining: constants.ALL_BALLS.slice(),
       timerEnabled: false,
-      timeout: 1000
+      timeout: constants.CALLER_TIMEOUT
     };
     this._handlePlayClick  = this._handlePlayClick.bind(this);
     this._startDrawingBalls = this._startDrawingBalls.bind(this);

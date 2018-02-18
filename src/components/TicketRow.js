@@ -4,6 +4,11 @@ import { Flex } from 'reflexbox';
 
 import TicketNumber from './TicketNumber';
 
+/**
+ * When provided with an array of integers, the TicketRow component will return
+ * a row of TicketNumber components.
+ * @class
+ */
 class TicketRow extends React.Component {
 render() {
     return (
