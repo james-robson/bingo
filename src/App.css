@@ -54,4 +54,5 @@ div.called-number {
 
 div.called-number-lg {
   margin: 40px 0;
+  min-height: 45px;
 }

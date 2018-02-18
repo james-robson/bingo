@@ -8,31 +8,35 @@ import logo from './logo.png';
 import './App.css';
 import constants from './constants';
 
+/**
+ * Parent component of the bingo app. Loads the TicketContainer component.
+ * @class
+ */
 class App extends Component {
   constructor() {
     super();
-    const ballsRemaining = Array.apply(null, {length: 90}).map(function(value, index){
-      return index + 1;
-    });
+
+    // Initialise state with sensible defaults
     this.state = {
       tickets: [],
       calledNumbers: [],
       playing: false,
-      ballsRemaining: ballsRemaining,
+      ballsRemaining: constants.ALL_BALLS.slice(),
       timerEnabled: false,
       timeout: 1000
     };
-    this.handleClick  = this.handleClick.bind(this);
-    this.startDrawing = this.startDrawing.bind(this);
+    this._handlePlayClick  = this._handlePlayClick.bind(this);
+    this._startDrawingBalls = this._startDrawingBalls.bind(this);
   }
 
   componentWillMount() {
     let numberPairs = constants.INPUT_STRING.match(/(..?)/g).map(function (number) {
-      // Parsing as base 10 then casting back to string removes leading 0s the
-      // ticket numbers but keeps the type right for the JSX template.
+      /* Parsing as base 10 then casting back to string removes leading 0s the
+         ticket numbers but keeps the type right for the JSX template. */
       return parseInt(number, 10).toString();
     });
 
+    // Cut our number list into ticket size chunks
     let fullTickets = [];
     while (numberPairs.length) {
       fullTickets.push(numberPairs.splice(0, constants.TICKET_SIZE));
@@ -40,58 +44,32 @@ class App extends Component {
 
     let ticketsWithRows = [];
     let row, rowWithSpaces;
+
+    /* Divide up the ticket data into individual rows. Mutating the data this
+       way makes rendering the child components much simpler. */
     for (let ticketCount = 0; ticketCount < fullTickets.length; ticketCount++) {
       let ticketRowData = [];
       while (fullTickets[ticketCount].length) {
         row = fullTickets[ticketCount].splice(0, constants.ROW_SIZE);
-        rowWithSpaces = this.addBlankSpaces(row)
+        rowWithSpaces = this._addBlankSpaces(row)
         ticketRowData.push(rowWithSpaces);
       }
       ticketsWithRows.push(ticketRowData);
     }
 
+    /* Setting state to required values. In reality this would probably be the
+       the result of an async call to an API and wrapped in a promise */
     this.setState({
       tickets: ticketsWithRows,
       calledNumbers: this.state.calledNumbers
     })
   }
 
-  addBlankSpaces(row) {
-    const columnRanges  = constants.COLUMN_RANGES;
-    let rowWithSpaces = [];
-    for (let i = 0; i < columnRanges.length; i++) {
-      if(row[0] <= columnRanges[i]) {
-        rowWithSpaces.push(row.shift())
-      } else {
-        rowWithSpaces.push("");
-      }
-    }
-
-    return rowWithSpaces;
-  }
-
-  handleClick() {
-    let state = Object.assign({}, this.state);
-    state.playing      = true;
-    state.timerEnabled = true;
-    this.setState(state);
-  }
-
-  startDrawing() {
-
-    const ball = this.state.ballsRemaining.splice(this.state.ballsRemaining.length * Math.random() | 0, 1)[0]
-    const state = this.state;
-    state.calledNumbers.unshift(ball);
-    this.setState(state);
-  }
-
   render() {
     const that = this;
+    let ballsToCall = constants.ALL_BALLS.slice();
 
-    let ballsToCall = Array.apply(null, {length: 90}).map(function(value, index){
-      return index + 1;
-    });
-
+    /* The play area is displayed conditionally based on current state */
     let playArea = this.state.playing ?
       <Flex justify='center' p={1/4} w={1} column>
         <Box p={1}>
@@ -110,7 +88,7 @@ class App extends Component {
         </Box>
       </Flex> :
       <Flex justify='center' align='center' w={1}>
-        <button onClick={this.handleClick} className='play-button'>
+        <button onClick={this._handlePlayClick} className='play-button'>
           <span>PLAY</span>
         </button>
       </Flex>;
@@ -120,12 +98,14 @@ class App extends Component {
         <ReactInterval
           timeout={this.state.timeout}
           enabled={this.state.timerEnabled}
-          callback={this.startDrawing} />
+          callback={this._startDrawingBalls} />
+
         <Flex justify='center' align='center' className="App-header">
           <Box p={1}>
             <img src={logo} className="App-logo" alt="logo" />
           </Box>
         </Flex>
+
         <Flex w={1}>
 
           {playArea}
@@ -133,9 +113,56 @@ class App extends Component {
           <Box>
             <TicketContainer tickets={this.state.tickets} calledNumbers={this.state.calledNumbers} />
           </Box>
+
         </Flex>
       </div>
     );
+  }
+
+  /**
+   * Inserts empty spaces into ticket row row data based on the column limits
+   * for a ticket. Returns the mutated array which will be rendered by a
+   * TicketRow component.
+   * @param {Array} row - An array of strings representing one ticket row
+   * @return {Array}
+   */
+  _addBlankSpaces(row) {
+    const columnRanges  = constants.COLUMN_RANGES;
+    let rowWithSpaces = [];
+    for (let i = 0; i < columnRanges.length; i++) {
+      if(row[0] <= columnRanges[i]) {
+        rowWithSpaces.push(row.shift())
+      } else {
+        rowWithSpaces.push("");
+      }
+    }
+
+    return rowWithSpaces;
+  }
+
+  /**
+   * Changes the 'playing' and 'timerEnabled' keys in state to start our game.
+   * This will show the play area and start the timer - see _startDrawingBalls()
+   */
+  _handlePlayClick() {
+    let state = Object.assign({}, this.state);
+    state.playing      = true;
+    state.timerEnabled = true;
+    this.setState(state);
+  }
+
+  /**
+   * Method used as a callback to the ReactInterval component. Once play starts
+   * this method will be called once per second. A random ball is removed from
+   * 'ballsRemaining' and added to the start of 'calledNumbers', which are both
+   * held in state. The resulting state changes update all components in the app
+   * as props are updated through the child components.
+   */
+  _startDrawingBalls() {
+    const ball = this.state.ballsRemaining.splice(this.state.ballsRemaining.length * Math.random() | 0, 1)[0]
+    const state = this.state;
+    state.calledNumbers.unshift(ball);
+    this.setState(state);
   }
 }
 
